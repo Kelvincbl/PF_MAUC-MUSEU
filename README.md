@@ -1,19 +1,18 @@
-# PF_MAUC-MUSEU
-
 # 🎨 Museu de Arte UFC (MAUC)
 
-Este projeto simula a gestão de um museu utilizando os conceitos da **Programação Orientada a Objetos (POO)** em Python. Ele inclui a administração de exposições, obras de arte, funcionários e visitantes.
+Este projeto simula a gestão de um museu utilizando os conceitos da **Programação Orientada a Objetos (POO)** em Python. Ele inclui a administração de exposições, obras de arte, funcionários e visitantes, proporcionando uma experiência realista de como um museu pode ser gerenciado digitalmente.
 
 ---
 
 ## 🏛️ Sobre o Projeto
 
-O **Museu de Arte UFC (MAUC)** é um sistema que:
+O **Museu de Arte UFC (MAUC)** é um sistema desenvolvido para simular a organização e funcionamento de um museu, permitindo:
 
-- Gerencia exposições e suas obras de arte.
-- Cadastra funcionários, incluindo guias, curadores, seguranças e administradores.
-- Permite a criação e listagem de visitantes.
-- Aplica os princípios de **Encapsulamento, Herança, Polimorfismo e Abstração**.
+- **Gerenciamento de Exposições:** Criação e listagem de exposições com suas respectivas temáticas e obras de arte.
+- **Administração de Obras de Arte:** Registro de diferentes obras, incluindo título, artista e ano de criação.
+- **Cadastro de Funcionários:** Diferentes categorias de funcionários (guias, curadores, seguranças e administradores) com funções distintas.
+- **Interação com Visitantes:** Cadastro de visitantes para representar o público do museu.
+- **Aplicação dos princípios da POO:** O projeto implementa os conceitos fundamentais da Programação Orientada a Objetos, tornando o código modular e escalável.
 
 ---
 
@@ -21,6 +20,7 @@ O **Museu de Arte UFC (MAUC)** é um sistema que:
 
 - **Linguagem:** Python 3+
 - **Paradigma:** Programação Orientada a Objetos (POO)
+- **Estrutura Modular:** Cada classe é representada em um arquivo separado para melhor organização e reutilização do código.
 
 ---
 
@@ -40,6 +40,8 @@ O **Museu de Arte UFC (MAUC)** é um sistema que:
 │── 📄 visitante.py      # Classe Visitante
 └── 📄 README.md         # Documentação do projeto
 ```
+
+Cada classe possui seus métodos e atributos específicos para modelar um museu de maneira realista.
 
 ---
 
@@ -64,20 +66,20 @@ $ python main.py
 
 ### 🔹 **Encapsulamento**
 
-- Os atributos das classes são **privados** (`__atributo`) e acessados por métodos `get` e `set`.
+- Os atributos das classes são **privados** (`__atributo`) e acessados por métodos `get` e `set`, garantindo segurança e integridade dos dados.
 
 ### 🔹 **Herança**
 
-- `Guia`, `Curador`, `Segurança` e `Administrador` **herdam** de `Funcionario`.
+- `Guia`, `Curador`, `Segurança` e `Administrador` **herdam** de `Funcionario`, reutilizando atributos e métodos comuns a todos os funcionários do museu.
 
 ### 🔹 **Polimorfismo**
 
-- O método `descrever_funcao()` é **sobrescrito** em cada subclasse.
-- Todos os funcionários são armazenados em uma **lista genérica** e iterados sem precisar saber o tipo exato.
+- O método `descrever_funcao()` é **sobrescrito** em cada subclasse, garantindo que cada tipo de funcionário tenha uma descrição específica de sua função.
+- Todos os funcionários são armazenados em uma **lista genérica** e iterados sem precisar saber o tipo exato, permitindo flexibilidade e escalabilidade.
 
 ### 🔹 **Abstração**
 
-- A classe `Museu` **esconde** detalhes internos e oferece apenas métodos relevantes como `adicionar_exposicao()`.
+- A classe `Museu` **esconde** detalhes internos e oferece apenas métodos relevantes como `adicionar_exposicao()`, fornecendo uma interface clara para interação.
 
 ---
 
@@ -105,14 +107,7 @@ Visitante: Ana, Idade: 22
 
 ---
 
-## 🔥 Possíveis Melhorias
-
-- Adicionar um sistema de agendamento de visitas.
-- Implementar um banco de dados para armazenar as informações.
-
----
-
 ## 📝 Autor
 
-Projeto desenvolvido por **[William Kelvin Borges da Costa]**.
+Projeto desenvolvido por **[William Kelvin Borges da Costa]**. Caso tenha sugestões ou dúvidas, entre em contato!
 
